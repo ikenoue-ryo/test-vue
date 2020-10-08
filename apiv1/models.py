@@ -17,4 +17,3 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-published_at']
-
