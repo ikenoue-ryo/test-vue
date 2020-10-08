@@ -8,7 +8,6 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-
 class Post(models.Model):
     picture = models.ImageField(upload_to='images/', null=True, blank=True)
     title = models.CharField(max_length=100, null=True, blank=True)
@@ -17,3 +16,5 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-published_at']
+
+
